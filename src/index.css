@@ -1,0 +1,13 @@
+/* Global reset handled in App.css — keep this minimal */
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}

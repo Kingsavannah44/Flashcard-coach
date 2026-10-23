@@ -957,3 +957,76 @@ kbd {
 .card-wrapper {
   animation: cardEnter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   AI HINT PANEL
+   ═══════════════════════════════════════════════════════════════════ */
+.hint-panel {
+  width: 100%;
+  background: linear-gradient(135deg, #0f1e38 0%, #111827 100%);
+  border: 1px solid rgba(99,102,241,0.4);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  animation: slideUp 0.3s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 8px 32px rgba(99,102,241,0.15);
+}
+
+.hint-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hint-badge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), #4f46e5);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.hint-prompt-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+
+.hint-body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  white-space: pre-wrap;
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.04);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent);
+}
+
+.hint-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hint-cta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hint-rate-row {
+  display: flex;
+  gap: 10px;
+}
+
+.hint-rate-row .rate-btn {
+  flex: 1;
+}
